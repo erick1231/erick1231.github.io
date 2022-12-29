@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+ul{list-style: none;}
+
+
+p{font-size: 1.25em;}
+
+a{text-decoration: none;}
+
+li{
+    font-size: 1.25em;
+}
+
+
+
+button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(7, 0, 0, 0.651);
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(135, 206, 235);
+    color: rgb(7, 0, 0);
+    transition: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: rgb(108, 208, 248);
+    background-color: rgb(106, 162, 184);
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header{
+    background-color: rgb(7, 0, 0);
+}
+
+
+
+header .logo{
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(135, 206, 235);
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px; 
+}
+
+header a{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(7, 0, 0);
+    background-color: rgb(135, 206, 235);
+    transition: 0.5s;
+}
+
+header a:hover{
+    transform: translateY(-5px);
+    color: rgb(108, 208, 248);
+    background-color: rgb(106, 162, 184);
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    border-top: 2px solid rgb(108, 208, 248);
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.712),
+    rgba(0, 0, 0, 0.712)),url(../assets/img/manga_anime_games-1950769.jpg!d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+
+#Somos-animeXYZ{
+    border-top: 2px solid rgb(108, 208, 248);
+    background-color: rgb(7, 0, 0);
+    color: #fff;
+}
+
+#Somos-animeXYZ .container{
+    padding: 200px 20px;
+    text-align: center;
+}
+
+#Somos-animeXYZ span,p{
+    color: rgb(108, 208, 248);
+}
+
+#Somos-animeXYZ .img-container{
+}
+
+
+#Caracteristicas{
+    border-top: 2px solid rgb(108, 208, 248);
+    color: #fff;
+    background-color: rgb(7, 0, 0);
+}
+
+#Caracteristicas .container{
+    padding: 200px 20px;
+    text-align: center;
+}
+
+#Caracteristicas li{
+    margin: 0 0 15px;
+    color: rgb(108, 208, 248);
+}
+
+
+#Caracteristicas h3{
+    margin-bottom: 20px;
+}
+
+#Empieza-a-Ver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    border-top: 2px solid rgb(108, 208, 248);
+    color: #fff;
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.712),
+    rgba(0, 0, 0, 0.712)) ,url(../assets/img/291-2912167_uscite-rimandate-covid19-manga-para.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Empieza-a-Ver h2{
+    margin-bottom: 50px;
+}
+
+
+footer{
+    background-color: rgb(7, 0, 0);
+    border-top: 2px solid rgb(108, 208, 248);
+}
+
+footer .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 30vh;
+}
+
+
+
+@media (min-width:760px){
+    header{
+        position: fixed;
+        width: 100%;
+        border-bottom: 2px solid rgb(108, 208, 248);
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    header a{
+        padding: 10px;
+        margin: 0 15px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+    #Somos-animeXYZ .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Somos-animeXYZ .img-container{
+        width: 50%;
+        height: 300px;
+        border: 2px solid rgb(108, 208, 248);
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgb(108, 208, 248);
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.432),
+        rgba(0, 0, 0, 0.432)),url(../assets/img/viendo-anime.jpg);
+        background-position: center center;
+    }
+    #Somos-animeXYZ .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: initial;
+        width: 50%;
+        max-width: 600px;
+        padding: 0 30px;
+    }
+    #Caracteristicas .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #Caracteristicas .img-container{
+        width: 50%;
+        height: 300px;
+        border: 2px solid rgb(108, 208, 248);
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgb(108, 208, 248);
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.432),
+        rgba(0, 0, 0, 0.432)),url(../assets/img/caracteristicas.gif);
+        
+    }
+    #Caracteristicas .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
